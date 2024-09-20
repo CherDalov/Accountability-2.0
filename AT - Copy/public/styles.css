@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .task-input button {
+    padding: 10px 20px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+  }
+  
+  .task-list li .delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #logoutBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+  

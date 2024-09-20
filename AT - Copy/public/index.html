@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accountability Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <h1>Accountability Tracker</h1>
+    <div class="task-input">
+      <input type="text" id="taskText" placeholder="Enter a new task..." />
+      <input type="text" id="taskDays" placeholder="Enter days (e.g., 1,3,5)" />
+      <button id="addTaskBtn">Add Task</button>
+      <button id="addToAllDaysBtn">Add to All Days</button>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper" id="daysContainer">
+        <!-- Slides will be inserted here -->
+      </div>
+      <!-- Swiper navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <canvas id="tasksCompletedChart"></canvas>
+    <canvas id="tasksPercentageChart"></canvas>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Toastify -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+  />
+  <script src="script.js"></script>
+</body>
+</html>
